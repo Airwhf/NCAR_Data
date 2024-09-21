@@ -15,8 +15,8 @@ cert_opt=""
 # uncomment the following line:
 #set cert_opt = "--no-check-certificate"
 
-start_date="2018-06-20"
-end_date="2018-08-02"
+start_date="2017-12-20"
+end_date="2018-02-02"
 
 current_date="$start_date"
   
@@ -34,9 +34,9 @@ while [[ "$current_date" != "$end_date" ]]; do
     echo "Download FNL files ---- $yyyy-$mm-$dd"
 
     # download the file(s)
-    wget $cert_opt $opts https://data.rda.ucar.edu/ds083.2/grib2/$yyyy/$yyyy.$mm/fnl_${yyyy}${mm}${dd}_00_00.grib2
-    wget $cert_opt $opts https://data.rda.ucar.edu/ds083.2/grib2/$yyyy/$yyyy.$mm/fnl_${yyyy}${mm}${dd}_06_00.grib2
-    wget $cert_opt $opts https://data.rda.ucar.edu/ds083.2/grib2/$yyyy/$yyyy.$mm/fnl_${yyyy}${mm}${dd}_12_00.grib2
-    wget $cert_opt $opts https://data.rda.ucar.edu/ds083.2/grib2/$yyyy/$yyyy.$mm/fnl_${yyyy}${mm}${dd}_18_00.grib2
+    wget $cert_opt $opts https://data.rda.ucar.edu/d083002/grib2/$yyyy/$yyyy.$mm/fnl_${yyyy}${mm}${dd}_00_00.grib2
+    wget $cert_opt $opts https://data.rda.ucar.edu/d083002/grib2/$yyyy/$yyyy.$mm/fnl_${yyyy}${mm}${dd}_06_00.grib2
+    wget $cert_opt $opts https://data.rda.ucar.edu/d083002/grib2/$yyyy/$yyyy.$mm/fnl_${yyyy}${mm}${dd}_12_00.grib2
+    wget $cert_opt $opts https://data.rda.ucar.edu/d083002/grib2/$yyyy/$yyyy.$mm/fnl_${yyyy}${mm}${dd}_18_00.grib2
     echo ""
 done
