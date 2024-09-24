@@ -15,8 +15,8 @@ cert_opt=""
 # uncomment the following line:
 #set cert_opt = "--no-check-certificate"
 
-start_date="2017-12-20"
-end_date="2018-02-02"
+start_date="2013-06-20"
+end_date="2013-08-02"
 
 current_date="$start_date"
   
